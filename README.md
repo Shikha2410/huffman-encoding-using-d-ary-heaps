@@ -1,4 +1,4 @@
-# huffman-encoding-using-d-ary-heaps
+# Huffman Encoding using D-ary Heaps
 The goal of this project is to implement a system that uses Huffman coding so that when enormous amount of data needs to be transferred, the overall data size is reduced. This is done in three phases: Huffman Coding, Encoder and Decoder.
 
 In the first phase, I developed a program to generate Huffman codes using 4-way cache optimized heap. It takes a frequency table (generated from input file) as input, and outputs a code table. This was done after a preliminary analysis of the run time of 3 priority queue structures for performance: Binary Heap, 4-way cache optimized heap, and Pairing Heap. In my analysis (given on page 7), 4-way cache optimized heap yielded the best performance on the sample input data file – sample_input_large.txt, and is therefore used in the program to perform priority queue operations.
